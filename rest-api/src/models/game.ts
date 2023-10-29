@@ -1,5 +1,5 @@
 export interface Game {
-  id: number;
+  id?: number;
   description: string;
   teamLocal: string;
   teamVisit: string;

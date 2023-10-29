@@ -7,7 +7,6 @@ app.use(express.json()); // Enables JSON parsing in the request body
 // Routing Regestry
 app.use('/games', gamesRouter);
 
-
 app.get("/", (req: Request, res: Response) => {
   res.send("Hello FootballIn API");
 });
