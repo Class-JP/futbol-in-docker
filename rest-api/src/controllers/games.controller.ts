@@ -76,10 +76,10 @@ export class GamesController {
     const game: Game = {
       description: data.description,
       location: data.location,
-      matchDate: data.matchDate,
+      matchDate: data.matchDate || data.matchdate,
       score: data.score,
-      teamLocal: data.teamLocal,
-      teamVisit: data.teamVisit,
+      teamLocal: data.teamLocal || data.teamlocal,
+      teamVisit: data.teamVisit || data.teamvisit,
     };
 
     return game;

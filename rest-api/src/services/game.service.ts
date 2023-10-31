@@ -65,8 +65,10 @@ export class GameService {
 
   async updateGame(id: number, game: Game): Promise<{game: Partial<Game>, error?: any | undefined}> {
     try {
+
       let updateFields: Array<string> = [];
       for (const [field, value] of Object.entries(game)) {
+         // cool info about ts and k, v iterations -> https://effectivetypescript.com/2020/05/26/iterate-objects/
         updateFields.push(`${field} = '${value}'`);
       }
 
