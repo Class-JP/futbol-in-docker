@@ -10,3 +10,7 @@
 .application-home > h1 {
   padding-bottom: 3em;
 }
+
+.header-panel {
+  margin: 4% 0;
+}
