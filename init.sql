@@ -1,6 +1,6 @@
-CREATE DATABASE futbol_in_db;
+SELECT 'CREATE DATABASE futbol_in_db' WHERE NOT EXISTS (SELECT FROM pg_database WHERE datname = 'futbol_in_db');
 
-CREATE TABLE games (
+CREATE TABLE IF NOT EXISTS games (
     id serial PRIMARY KEY,
     description VARCHAR(255),
     teamLocal VARCHAR(255),
